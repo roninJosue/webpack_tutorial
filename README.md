@@ -1,2 +1,2 @@
 # webpack_tutorial
-Introduction to wWbpack
+Introduction to Webpack
