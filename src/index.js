@@ -1,20 +1,16 @@
 import _ from 'lodash';
-import './style.css';
-import imageSamurai from './samurai7.png';
-import Data from './data.xml';
+import printMe from './print.js';
 
 function component() {
     const element = document.createElement('div');
+    const btn  = document.createElement('button');
 
     element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-    element.classList.add('hello');
 
-    // Add the img to our existing div.
-    const myImage = new Image();
-    myImage.src = imageSamurai;
+    btn.innerHTML = "Click me and check the console!";
+    btn.onclick = printMe;
 
-    element.appendChild(myImage);
-    console.log(Data);
+    element.appendChild(btn);
 
     return element;
 }
